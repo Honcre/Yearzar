@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "babel": {
+    "plugins": [
+      "transform-remove-strict-mode"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wbp": "webpack"
@@ -11,6 +16,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.1.1",
+    "css-loader": "^0.28.11",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "style-loader": "^0.21.0",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
   }

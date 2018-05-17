@@ -1,4 +1,4 @@
-﻿//JS modules are a way to share code using explicit dependencies
+﻿//JS modules are a way to share code using explicit dependencies, webpack make it happen
 require('./lib');//explicit dependencies
 document.getElementById("fillthis").innerHTML = getText();
 

@@ -15,35 +15,36 @@
 
     <div id="fillthis"></div>
 
-    <script src="~/Source/lib.js"></script>
-    <script src="~/Source/app.js"></script>
+    @*<script src="~/Source/lib.js"></script>
+    <script src="~/Source/app.js"></script>*@
+    <script src="~/dist/bundle.js"></script>
 
-    <!--Javascript dependenices => app.js call function in lib.js if insert incorrect order of JS files references
+    <!--Javascript dependenices => app.js call function in lib.js if insert incorrect order of JS files references(ex.app.js before lib.js)
         Uncaught ReferenceError getText is not defined
     -->
 
     <script>
-                //document.getElementById('fillthis').innerHTML = getText();
+                        //document.getElementById('fillthis').innerHTML = getText();
 
-                //function expression is not declarations so it not hoist
-                /*
-                getText = function () {
-                    return "Data from below script tag";
+                        //function expression is not declarations so it not hoist
+                        /*
+                        getText = function () {
+                            return "Data from below script tag";
 
-                }
+                        }
 
 
-                function getText() {
-                    return "Data from function declarations in the same script(scope) are hoist";
+                        function getText() {
+                            return "Data from function declarations in the same script(scope) are hoist";
 
-                }
-                */
+                        }
+                        */
 
-                /*
-                 * Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
-                 * (to the top of the current script or the current function)
-                 * javascript ที่อยู่กันคนละ script tag ถือว่าอยู่กันคนละ scope การ refer ถึงกันต้องเรียงลำดับให้ถูก ไม่มีการ hoist
-                */
+                        /*
+                         * Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
+                         * (to the top of the current script or the current function)
+                         * javascript ที่อยู่กันคนละ script tag ถือว่าอยู่กันคนละ scope การ refer ถึงกันต้องเรียงลำดับให้ถูก ไม่มีการ hoist
+                        */
 
 
     </script>
