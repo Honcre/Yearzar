@@ -11,13 +11,17 @@ const extractCSS = new ExtractTextPlugin('allstyles.css');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
-    entry: './wwwroot/source/app-3.js',
+    entry:
+        {
+            'main-client': './wwwroot/source/app-react.js'
+        },
     output: {
         path: path.resolve(__dirname, 'wwwroot/dist'),
-        filename: 'bundle_ugly.js'
+        filename: 'bundle_react.js',
+        publicPath: '/dist/'
     },
     plugins: [
-        extractCSS,
+        //extractCSS,
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
@@ -28,19 +32,23 @@ module.exports = {
     ],
     module: {
         rules: [
+            //{
+            //    test: /\.css$/,
+            //    use: extractCSS.extract({
+            //        fallback: "style-loader",
+            //        use: ['css-loader?minimize'],
+            //    })
+            //},
             {
                 test: /\.css$/,
-                use: extractCSS.extract({
-                    fallback: "style-loader",
-                    use: ['css-loader?minimize'],
-                })
+                use: [{ loader: "style-loader" }, { loader: "css-loader" }]
             },
             {
             test: /\.js?$/,
             use: {
                 loader: 'babel-loader',
                 options: {
-                    presets:['env'],
+                    presets:['env','react'],
                 },
             },
             },

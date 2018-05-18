@@ -17,5 +17,10 @@ namespace ASPNetCoreReact.Controllers
         {
             return View();
         }
+
+        public IActionResult IndexReact()
+        {
+            return View();
+        }
     }
 }
