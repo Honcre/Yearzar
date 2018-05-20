@@ -1,0 +1,2 @@
+To reset (discards all local changes)
+git reset --hard
