@@ -1,1 +1,18 @@
 tttt
+
+
+https://stackoverflow.com/questions/1100819/how-do-you-design-object-oriented-projects
+
+The steps that I use for initial design (getting to a class diagram), are:
+
+1.Requirements gathering. Talk to the client and factor out the use cases to define what functionality the software should have.
+
+2.Compose a narrative of the individual use cases.
+
+3.Go through the narrative and highlight nouns (person, place, thing), as candidate classes and verbs (actions), as methods / behaviors.
+
+4.Discard duplicate nouns and factor out common functionality.
+
+5.Create a class diagram. If you're a Java developer, NetBeans 6.7 from Sun has a UML module that allows for diagramming as well as round-trip engineering and it's FREE. Eclipse (an open source Java IDE), also has a modeling framework, but I have no experience with it. You may also want to try out ArgoUML, an open source tool.
+
+6.Apply OOD principles to organize your classes (factor out common functionality, build hierarchies, etc.)
