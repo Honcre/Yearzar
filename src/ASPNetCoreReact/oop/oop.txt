@@ -1,0 +1,41 @@
+﻿Object-oriented programming(OOP)  is an approach to software development(เป็นแนวทางในการพัฒนา Software)  
+in which the structure of software is base on objects interacting with each other to accompllish a task.
+This interaction takes the form of messages passing back and forth between(ส่งไปมา) the objects. In response to a message, an object
+can perform an action or method.
+
+Objects
+As I noted earlier, we live in an object-oriented world. You are an object. You interact with other objects.
+In fact, you are an object with data such as height and hair color. You also have methods that you
+perform or are performed on you, such as eating and walking.
+So what are objects? In OOP terms, an object is a structure for incorporating data and the
+procedures for working with that data(object เป็นโครงสร้างสำหรับการรวมข้อมูลและ
+ขั้นตอนการทำงานกับข้อมูลนั้น)
+
+
+Abstraction (concentrate เฉพาะ  objects properties ที่เกี่ยวข้องกับ task)
+When you interact with objects in the world, you are often only concerned with a subset of their
+properties. Without this ability to abstract or filter out the extraneous properties of objects, you would
+find it hard to process the plethora of information bombarding you and concentrate on the task at hand.
+As a result of abstraction, when two different people interact with the same object, they often deal
+with a different subset of attributes. When I drive my car, for example, I need to know the speed of the
+car and the direction it is going. Because the car is an automatic, I do not need to know the RPMs of the
+engine, so I filter this information out. On the other hand, this information would be critical to a racecar
+driver, who would not filter it out.
+When constructing objects in OOP applications, it is important to incorporate this concept of
+abstraction. If you were building a shipping application, you would construct a product object with
+attributes such as size and weight. The color of the item would be extraneous information and filtered
+out. On the other hand, when constructing an order-entry application, the color could be important and
+would be included as an attribute of the product object.
+
+Encapsulation
+Another important feature of OOP is encapsulation. Encapsulation is the process in which no direct
+access is granted to the data; instead, it is hidden
+By encapsulating data you make the data of your system more secure and reliable. You know how
+the data is being accessed and what operations are being performed on the data. This makes program
+maintenance much easier and also greatly simplifies the debugging process. You can also modify the
+methods used to work on the data, and if you do not alter how the method is requested and the type of
+response sent back, then you do not have to alter the other objects using the method. Think about when
+you send a letter in the mail. You make a request to the post office to deliver the letter. How the post
+office accomplishes this is not exposed to you. If it changes the route it uses to mail the letter, it does not
+affect how you initiate the sending of the letter. You do not have to know the post office’s internal
+procedures used to deliver the letter
