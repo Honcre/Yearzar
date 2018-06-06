@@ -1,0 +1,35 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLActor</id><coordinates><x>70</x><y>0</y><w>80</w><h>110</h></coordinates><panel_attributes>Customer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>210</x><y>20</y><w>120</w><h>40</h></coordinates><panel_attributes>View Flight Info</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>20</y><w>110</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>40</x><y>110</y><w>690</w><h>130</h></coordinates><panel_attributes>demo of use case textual description
+Description:A customer views flight information page.The customer enter flight search information.
+After submit the search request,the customer views a list of flights matching the search criteria.
+
+Precondition: None
+
+Postcondition:The customer has opportunity to login and process to the flight booking page.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>70</x><y>350</y><w>80</w><h>110</h></coordinates><panel_attributes>Customer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>200</x><y>280</y><w>120</w><h>40</h></coordinates><panel_attributes>View Flight Info</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>200</x><y>370</y><w>120</w><h>40</h></coordinates><panel_attributes>Reserve Seat</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>370</y><w>110</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>50</x><y>460</y><w>680</w><h>500</h></coordinates><panel_attributes>Reserve Seat Use Case
+Description:the customer enters the flight number and indicates the seats being requested.
+After the customer submits the request,some confirmation information are displayed.
+
+Precondition:The customer has looked up the flight information.
+The customer has logged in and is viewing the flight booking screen.
+
+Postcondition:The customer is sent  a confirmation e mail outlining(สรุป) the flight details and the cancellation policy.
+
+
+** certain relationships can exist between use cases.The Reserve Seat use case includes the view flight info use case.
+This relationship is useful because you can use the View Flight Info use case independently of the Reserve Seat use case.
+This is called inclusion.you cannot use the Reserve Seat use case independently of the View Flight use case.This is important
+information that will affect how you model the solution.
+Another way that use cases relate to each other is through extension.You might have a general use case that is the base for all use cases.The base use case is extended by other use cases.For example,you might have Register Customer use case that describes the core process of registering customers.You cloud then develop Register Corporate Customer  and Register Retail Customer use cases that extended the base use case.
+The difference between extension and inclusion is that in extension the base use case being extended iss not use on it own 
+
+*** extend use case จะ execute บางครั้ง ตามเงื่อนไขเฉพาะ(optional to execute)
+     include use case จะ execute ทุกครั้งเมื่อ  base use case execute (include เหมือนเป็น unit of work inside base use case)
+
+**A Common mistake when developing use cases is to include actions initiated(เริ่ม)  by system itself.
+The emphasis(เน้น/ย้ำ) of the use case is on the interaction between external entities and the system.
+Another common mistake is to include description of the technical requirement of the system.
+Remember that use cases do not focus on how the system will perform the functions.
+but rather(มากกว่า) on what functions need to be incorporate(ร่วมกัน) in the system form the user's standpoint</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>310</y><w>80</w><h>80</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLActor</id><coordinates><x>360</x><y>350</y><w>80</w><h>110</h></coordinates><panel_attributes>Customer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>480</x><y>370</y><w>120</w><h>40</h></coordinates><panel_attributes>Register Customer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>370</y><w>100</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>630</x><y>310</y><w>190</w><h>40</h></coordinates><panel_attributes>Register Corporate Customer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>640</x><y>400</y><w>190</w><h>40</h></coordinates><panel_attributes>Register Retail Customer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>330</y><w>70</w><h>70</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>50;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>370</y><w>70</w><h>50</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>50;30;10;20</additional_attributes></element></diagram>

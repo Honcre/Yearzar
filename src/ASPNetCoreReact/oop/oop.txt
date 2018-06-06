@@ -39,3 +39,127 @@ you send a letter in the mail. You make a request to the post office to deliver 
 office accomplishes this is not exposed to you. If it changes the route it uses to mail the letter, it does not
 affect how you initiate the sending of the letter. You do not have to know the post office’s internal
 procedures used to deliver the letter
+
+Polymorphism (through abstract class or interface)
+Polymorphism is the ability of two different objects to respond to the same request message in their own
+unique way.
+You can create objects that respond to the same message in their own
+unique implementations. For example, you could send a print message to a printer object that would
+print the text on a printer, and you could send the same message to a screen object that would print the
+text to a window on your computer screen.
+
+Inheritance
+Most objects are classified according(ตาม) to hierarchies(ลำดับขั้น). For example, you can classify all dogs together as
+having certain common characteristics(คุณลักษณะ) such as having four legs and fur. Their breeds(สายพันธ์) further classify
+them into subgroups with common attributes such as size and demeanor. You also classify objects
+according to their function. For example, there are commercial vehicles and recreational vehicles. There
+are trucks and passenger cars. You classify cars according to their make and model. To make sense of the
+world, you need to use object hierarchies and classifications.
+You use inheritance in OOP to classify the objects in your programs according to common characteristics and function(คุณลักษณะ และ คุณสมบัติ ร่วมกัน). 
+This makes working with the objects easier and more intuitive(ที่ใช้งานได้ง่าย).
+It also makes programming easier because it enables you to combine general characteristics(คุณลักษณะ/คุณสมบัติทั่วไป) into a parent
+object and inherit these characteristics in the child objects. For example, you can define an employee
+object that defines all the general characteristics of employees in your company. You can then define a
+manager object that inherits the characteristics of the employee object but also adds characteristics
+unique to managers in your company. The manager object will automatically reflect any changes in the
+implementation of the employee object.
+SO *** Inheritance for คุณสมบัติ/คุณลักษณะ ติดตัว  Interface for คุณสมบัติ/คุณลักษณะ พิเศษ ที่ต้องสร้างขึ้นมาเอง
+
+Aggregation
+Aggregation is when an object consists of a composite of other objects that work together. For example,
+your lawn mower(เครื่องตัดหญ้า) object is a composite of the wheel(ล้อ) objects, the engine object, the blade(ใบมีด) object, and so
+on. In fact, the engine object is a composite of many other objects. There are many examples of
+aggregation in the world around us. The ability to use aggregation in OOP is a powerful feature that
+enables you to accurately model and implement business processes in your programs.
+
+In the 1990s, the Java programming language became popular. Because it’s a managed
+programming language, it relieves the programmer from having to worry about the housekeeping code.
+Managed languages provide a generalized way (through a base set of common classes) to handle the
+housekeeping details such as memory management and garbage collection.
+
+2.Designing OOP Solutions:
+Identifying the Class Structure
+many programmers and program managers do not like getting involved(ที่รวมถึง) in the design aspects(ด้าน/ส่วน) of the system.
+A good analogy to software design is the process of building a home. You would not expect the
+builder to start working on the house without detailed plans (blueprints) supplied by an architect. You
+would also expect the architect to talk to you about the home’s design before creating the blueprints. It is
+the architect’s job to talk to you about the design and functionality you want in the house and convert
+your requests to the plans that the builder uses to build the home. A good architect will also educate you
+as to what features are reasonable(เหมาะสม) for your budget and projected timeline.
+
+Understanding the Unified Modeling Language
+   UML was developed in the early 80s as a response to the need for a standard, systematic(เป็นระบบ) way of
+modeling(การสร้างแบบจำลอง) the design of object-oriented software. It consists of a series of textual and graphical models of
+the proposed solution(solution ที่นำเสนอ).
+
+Some common models used in UML are the following:
+• Software Requirement Specification(การชี้เฉพาะ เจาะจง) (SRS): A textual description of the overall
+responsibilities and scope of the system.
+• Use Case: A textual/graphical description of how the system will behave from the
+user’s perspective(มุมมอง). Users can be human or other systems.
+• Class Diagram: A visual blueprint of the objects that will be used to construct the
+system.
+• Sequence Diagram: A model of the sequence of object interaction as the program
+executes. Emphasis is placed on the order (เน้นเรื่องลำดับ) of the interactions and how they
+proceed over time.
+• Collaboration(การร่วมมือ) Diagram: A view of how objects are organized to work together as
+the program executes. Emphasis is placed on the communications that occur
+between the objects.
+• Activity Diagram: A visual representation of the flow of execution of a process or operation.
+
+Developing a SRS
+The purpose of the SRS is to do the following:
+• Define the functional requirements of the system.(กำหนดฟังก์ชันการทำงานของระบบ)
+• Identify the boundaries of the system.(ระบุขอบเขตของระบบ)
+• Identify the users of the system.(ระบุผู้ใช้งานระบบ)
+• Describe the interactions between the system and the external users.
+• Establish(จัดตั้ง/สร้าง) a common language between the client and the program team for
+describing the system.
+• Provide the basis(พื้นฐาน) for modeling use cases.
+   As an example, suppose that the owners of a small commuter airline want customers to be able to
+view flight information and reserve tickets for flights using a web registration system. After interviewing
+the business managers and the ticketing agents, the software designers draft an SRS document that lists
+the system’s functional requirements. The following are some of these requirements:
+• Nonregistered web users can browse to the web site to view flight information, but
+they can’t book flights.
+• New customers wanting to book flights must complete a registration form
+providing their name, address, company name, phone number, fax number, and
+e-mail address.
+• A customer is classified as either a corporate customer or a retail customer.
+• Customers can search for flights based on destination and departure times.
+• Customers can book flights indicating the flight number and the number of seats
+requested.
+• The system sends customers a confirmation via e-mail when the flight is booked.
+• Corporate customers receive frequent flier miles when their employees book
+flights.
+• Frequent-flier miles are used to discount future purchases.
+• Ticket reservations can be canceled up to one week in advance for an 80% refund.
+• Ticketing agents can view and update flight information.
+   SRS does not contain references to the technical requirements of the system.
+Once the SRS is developed, the functional requirements it contains are transformed into a series of use case diagrams.
+
+Introducing Use Cases
+  Use cases are developed from the SRS document. The actor is any outside entity that interacts with
+the system. An actor could be a human user (for instance, a rental agent), another software system (for
+instance, a software billing system), or an interface device (for instance, a temperature probe). Each
+interaction that occurs between an actor and the system is modeled as a use case.
+  Along with the graphical depiction(ตามด้วย textual ที่ใช้อธิบาย use case เพิ่มเติม) 
+The textual should be succinct(รวบรัด) and focus on what happening not on how it occurring (ไม่สนวิธีการ)
+Sometime Pre-Post Condition associated with(ที่เกี่ยวข้องกับ) the use case are also identified
+  See UC-demo1 
+
+Understanding class diagrams
+   The concent of classes and objects are fundamental(ปัจจัยพื้นฐาน) to OOP.An(อันเดียว) object is a structure for incorporate data and the procedures for working with data.
+These objects implement the functionality of an object-oreinted program.
+   Designers identify a potential(ที่อาจเป็นไปได้) list of classes that they will need to develop from the SRS and the use case diagrams.
+One way you identify the classes is by looking at the none phrases in the SRS document  and the use case descriptions.
+   A class is responsible for managing data.When defining the class structure,you must determine what data the class responsible for maintaining.
+The class sturcture must also define any operations that will performed on the data.
+   A class diagrams can help you visualize the attributes and operations of a class.
+
+Modeling object relationships
+In OOP when program executes,the various objects work together to accomplish the programming tasks.
+The relationship among(ในหมู่)  the classes that make up the program are modeled in the class diagram.Analyzing the verb phrases in the SRS often
+reveals(เผยให้เห็น) these relationships
+   Object relationships
+1.Association เมื่อ object หนึงมีการ use(method) หรือ refer(through props) object อื่น
