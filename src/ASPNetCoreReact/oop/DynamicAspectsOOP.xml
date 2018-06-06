@@ -1,0 +1,12 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLNote</id><coordinates><x>21</x><y>20</y><w>730</w><h>300</h></coordinates><panel_attributes>Modeling the Object Interaction
+The previous chapter focused on modeling the static (organizational) aspects of an OOP solution.
+This chapter continues the discussion of UML modeling
+techniques and focuses on modeling the dynamic (behavioral) aspects of an OOP solution. 
+The focus in this chapter is on how the objects in the system must interact with each other and what activities must
+occur to implement the solution.
+After reading this chapter, you should be familiar with the following:
+• The purpose of scenarios and how they extend the use case models.
+• How sequence diagrams model the time-dependent interaction of the objects in
+the system.
+• How activity diagrams map the flow of activities during application processing.
+• The importance of graphical user interface design and how it fits into the objectoriented design process.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
