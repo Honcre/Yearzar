@@ -1,0 +1,3 @@
+﻿Each tenant will setup their own site first
+Each tenant can update their own account profile
+Each tenant can manage their own site ex. stop site,change site's url,setup email server
